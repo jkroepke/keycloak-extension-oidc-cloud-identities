@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.jkroepke.github</groupId>
+    <artifactId>keycloak-extension-oidc-cloud-identities</artifactId>
+    <packaging>jar</packaging>
+    <version>0.0.0-SNAPSHOT</version>
+
+    <name>keycloak-extension-oidc-cloud-identities</name>
+    <url>https://github.com/jkroepke/keycloak-extension-oidc-cloud-identities</url>
+    <description></description>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Jan-Otto Kröpke</name>
+            <email>github@jkroepke.de</email>
+            <roles>
+                <role>Maintainer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Thomas Wießner</name>
+            <email />
+            <roles>
+                <role>Maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/jkroepke/keycloak-extension-oidc-cloud-identities.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/keycloak-config-cli.git</developerConnection>
+        <url>https://github.com/jkroepke/keycloak-extension-oidc-cloud-identities</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/jkroepke/keycloak-extension-oidc-cloud-identities/issues</url>
+    </issueManagement>
+
+    <properties>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <keycloak.version>21.0.1</keycloak.version>
+        
+        <sonar.organization>jkroepke</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
+</project>
