@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.0.1
+    volumes:
+      - ./target:/opt/keycloak/providers
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      AZURE_TENANT_ID:
+      AZURE_CLIENT_ID:
+      AZURE_CLIENT_SECRET:
+      AZURE_SUBSCRIPTION_ID:
+    ports:
+      - "8080:8080"
+    command:
+      - "start-dev"
+      #- --spi-event-listener-keycloak-custom-event-listener-enabled=true
+      #- --spi-event-listener-keycloak-custom-event-listener=oidc-cloud-identities
