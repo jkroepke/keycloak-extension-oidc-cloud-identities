@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   keycloak:
-    image: quay.io/keycloak/keycloak:21.0.1
+    image: quay.io/keycloak/keycloak:21.0.2
     volumes:
       - ./target:/opt/keycloak/providers
     environment:
